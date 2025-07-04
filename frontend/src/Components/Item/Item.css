@@ -1,0 +1,142 @@
+/* .item {
+    width: 280px;
+}
+.item img {
+    width: 280px;     
+}  */
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.item {
+    /* width: 350px; */
+    /* min-height: 350px; */
+    position: relative;
+}
+
+.item p {
+    text-align: justify;
+    margin: 6px 0;
+    font-size: 14px; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item img { 
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    display: block;
+    border-radius: 8px; 
+    object-fit: contain;
+}
+
+.item-prices {
+    display: flex;
+    gap: 20px;
+}
+
+.item-price-new {
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item:hover {
+    transform: scale(1.04);
+    transition: 0.6s;
+}
+
+.out-of-stock-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: translateY(10px); 
+}
+
+@media (max-width: 1280px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+        gap: 15px; 
+        padding: 15px; 
+    }
+    .item {
+        width: 220px;
+        font-size: 14px;
+    }
+    .item img {
+        width: 240px;
+        min-height: 286px;
+    }
+    .item-price-new {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 12px;
+        padding: 12px; 
+    }
+    .item {
+        width: 170px;
+        font-size: 13px;
+    }
+    .item img {
+        width: 190px;
+        min-height: 228px;
+    }
+    .item-price-new {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 800px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+    .item {
+        width: 120px;
+        font-size: 12px;
+    }
+    .item img {
+        width: 145px;
+        min-height: 174px
+    }
+    .item-price-new {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+        padding: 8px;
+    }
+    .item {
+        width: 160px;
+    }
+    .item img {
+        width: 160px;
+        min-height: 190px;
+    }
+    .out-of-stock-label {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}

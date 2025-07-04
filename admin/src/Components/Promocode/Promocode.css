@@ -1,0 +1,263 @@
+.promocode-container {
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+}
+
+.add-promocode {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.add-promocode h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.add-promocode form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+  font-family: "Outfit", serif;
+  padding: 10px 12px;
+  color: #495057;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  grid-column: span 2;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  font-family: "Outfit", serif;
+  width: fit-content;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.promocode-list {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.promocode-list h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.promocode-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.grid-header {
+  font-weight: 700;
+  background-color: #e9ecef;
+  padding: 12px 10px;
+  border-radius: 5px;
+  color: #333;
+  text-align: left;
+  display: contents;
+}
+
+.grid-header span {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.grid-row {
+  background-color: #fdfdfd;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  display: contents;
+}
+
+.grid-row:last-child {
+  border-bottom: none;
+}
+
+.grid-row span {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  text-align: center;
+}
+
+.delete-btn {
+  padding: 6px 6px;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: black; 
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+  color: white; 
+}
+
+@media (max-width: 800px) {
+  .promocode-container {
+    margin-left: 0; 
+    padding: 15px;
+  }
+  .add-promocode form {
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+  }
+  .submit-btn {
+    grid-column: span 1;
+    width: 100%;
+  }
+  .promocode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px; 
+    padding: 0;
+    font-size: 14px;
+  }
+  .grid-header {
+    display: none; 
+  }
+  .grid-row {
+    display: flex; 
+    flex-direction: column; 
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); 
+    position: relative; 
+    margin-bottom: 0; 
+  }
+  .grid-row span {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 8px 0; 
+    border-bottom: 1px dashed #f0f0f0; 
+    font-size: 15px;
+  }
+  .grid-row span:last-of-type {
+    border-bottom: none; 
+    padding-bottom: 0;
+  }
+  .grid-row span::before {
+    font-weight: 600;
+    color: #555;
+    margin-right: 10px;
+    content: attr(data-label) ":";
+    display: inline-block;
+    width: auto; 
+    flex-shrink: 0; 
+  }
+  .grid-row span:not(.actions) {
+    flex-grow: 1; 
+    text-align: right; 
+  }
+  .grid-row span.actions {
+    justify-content: flex-end; 
+    align-self: flex-end; 
+    padding: 10px 0 0 0; 
+    border-bottom: none; 
+  }
+  .grid-row span.actions::before {
+    content: none;
+  }
+  .delete-btn {
+    font-size: 16px;
+    padding: 8px 8px;
+    border: none;
+    color: #dc3545;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+  .delete-btn:hover {
+    background-color: #dc3545;
+  }
+}
+
+@media (max-width: 500px) {
+  .promocode-container {
+    padding: 10px;
+  }
+  .add-promocode,
+  .promocode-list {
+    padding: 15px;
+  }
+  .add-promocode h1,
+  .promocode-list h2 {
+    font-size: 22px;
+  }
+  .promocode-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid-row {
+    padding: 12px; 
+  }
+  .grid-row span {
+    padding: 6px 0;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  .delete-btn {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}

@@ -1,0 +1,92 @@
+.user-list-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.user-list-container h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-grid-header {
+    display: contents; 
+}
+
+.user-grid-row {
+    display: contents; 
+}
+
+.grid-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-grid-header .grid-item {
+    background-color: #edede9;
+    font-weight: 600;
+}
+
+.remove-button {
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 800px) {
+    .user-list-container {
+        width: auto;
+    }
+    .grid-item {
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .grid-item:before {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .remove-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .user-list-container {
+        width: auto;
+        padding: 10px 8px;
+    }
+    .user-list-container h1 {
+        text-align: center;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+    .grid-item {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .remove-button {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+}

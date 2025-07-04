@@ -1,0 +1,154 @@
+.hero-slider {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #0077b6 0%, #e1ffea22 70%);
+    height: 100vh;
+    padding: 0 100px;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    height: 67px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-latest-btn:hover {
+    background-color: #e03838; 
+}
+
+.hero-right img {
+    width: 32vw;
+    height: auto;
+}
+
+/* Swiper Custom Styling */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ff4141 !important;
+    font-size: 30px !important;
+}
+
+.swiper-button-prev {
+  left: 20px !important; 
+}
+
+.swiper-button-next {
+  right: 20px !important; 
+}
+
+.swiper-pagination-bullet {
+    background: #ff4141 !important;
+}
+
+@media (max-width: 1280px) {
+    .hero-slide {
+        padding: 0 80px;
+    }
+    .hero-left p {
+        font-size: 62px;
+    }
+    .hero-latest-btn {
+        width: 250px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .hero-right img {
+        width: 38vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-slide {
+        padding: 0 60px;
+    }
+    .hero-left p {
+        font-size: 50px;
+    }
+    .hero-latest-btn {
+        width: 220px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .hero-right img {
+        width: 45vw; 
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-slide {
+        flex-direction: column; 
+        text-align: center;
+        padding: 20px;
+        height: auto; 
+    }
+    .hero-left {
+        gap: 10px; 
+    }
+    .hero-left p {
+        font-size: 40px;
+    }
+    .hero-right img {
+        width: 70%;
+        margin-top: 20px;
+    }
+    .hero-slider {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-slide {
+        padding: 20px;
+    }
+    .hero-left p {
+        font-size: 30px;
+    }
+    .hero-latest-btn {
+        width: 175px;
+        height: 40px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .hero-right img {
+        width: 90%;
+    }
+    .hero-left h2{
+        font-size: 20px;
+    }
+}

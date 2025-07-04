@@ -1,0 +1,245 @@
+.checkout-page {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #007bff;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px;
+}
+
+.checkout-column {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.shipping-info h2,
+.order-summary-section h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.shipping-form .form-group {
+  margin-bottom: 15px;
+}
+
+.shipping-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.shipping-form input[type="text"],
+.shipping-form textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.shipping-form textarea {
+  min-height: 80px;
+}
+
+/* address dropdown */
+.address-selection {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center; 
+}
+
+.address-select {
+  width: calc(100% - 120px); 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* "Add New Address" button */
+.add-new-address-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-new-address-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Form action buttons ("Save Address" and "Cancel") */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.save-address-btn,
+.cancel-address-btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.save-address-btn {
+  margin-right: 10px;
+  background-color: #10b981; 
+  color: white;
+  border: none;
+}
+
+.save-address-btn:hover {
+  opacity: 0.9;
+}
+
+.cancel-address-btn {
+  background-color: #dc2626; 
+  color: white;
+  border: none;
+}
+
+.cancel-address-btn:hover {
+  opacity: 0.9;
+}
+
+/* Order Summary Section */
+.order-items {
+  margin-bottom: 20px;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-details:last-child {
+  border-bottom: none;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.pay-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pay-button:hover {
+  background-color: #0056b3;
+}
+
+.item-details-checkout {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-details-checkout:last-child {
+  border-bottom: none;
+}
+
+.item-image-checkout {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.item-info-checkout {
+  flex-grow: 1;
+}
+
+.item-name-checkout {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.item-quantity-checkout {
+  color: #777;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.item-price-checkout {
+  color: #555;
+  font-weight: bold;
+}
+
+.order-total-checkout {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .checkout-grid {
+    grid-template-columns: 1fr; 
+  }
+  .checkout-column {
+    margin-bottom: 20px;
+  }
+}
