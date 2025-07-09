@@ -79,19 +79,57 @@ Visit `http://localhost:3000/` for the storefront.
 ## 📝 Project Structure
 
 ```
-/
-├── client/             # React frontend
-│   ├── src/
+ecommerce-website-mern/
+├── admin/                    
 │   ├── public/
-├── server/             # Express backend
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   └── index.js
+│   │   └── vite.svg
+│   ├── src/
+│   │   ├── assets/           # Images, icons, etc.
+│   │   ├── Components/       # Reusable React components
+│   │   ├── Pages/Admin       
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── eslint.config
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   └── README.md 
+├── backend/                  
+│   ├── src/  
+│   │   ├── config/           
+│   │   ├── controllers/       
+│   │   ├── middlewares/            
+│   │   ├── models/            
+│   │   ├── routes/
+│   │   ├── app.js
+│   │   └── index.js
+│   ├── upload_new/              
+│   ├── .env                  
+│   ├── .gitignore
+│   ├── package-lock.json  
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   │   └── vite.svg
+│   ├── src/
+│   │   ├── Components/       # Reusable React components
+│   │   ├── Context/       
+│   │   ├── Pages/            # Main application pages
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── eslint.config
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   └── README.md
 ├── .gitignore
-├── README.md
-└── package.json         # root (if monorepo)
+└── README.md                 # Main project README
 ```
 
 ---
