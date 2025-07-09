@@ -1,4 +1,4 @@
-# MERN E‑commerce Website 🛍️
+# 🛍️ MERN E‑commerce Website 
 
 A fully functional MERN Stack E‑commerce Website. Offers complete product and order management, secure user authentication, payment integration, and an admin panel for seamless control and data management.
 
