@@ -82,7 +82,7 @@ Start the frontend:
 npm start
 ```
 
-Visit `http://localhost:3000/` for the storefront.
+Visit `http://localhost:5173/` for the storefront.
 
 ---
 
