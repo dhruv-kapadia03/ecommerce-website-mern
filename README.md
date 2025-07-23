@@ -21,10 +21,10 @@ A fully functional MERN Stack E‑commerce Website. Offers complete product and 
 ## 🎥 Project Demo
 
 ### 🔹 Frontend
-[![Frontend Demo](https://img.icons8.com/clouds/100/000000/video-playlist.png)](https://res.cloudinary.com/drm14e8mg/video/upload/v1752845861/Frontend_ce9wpa.mp4)
+[![Frontend Demo](https://img.icons8.com/clouds/100/000000/video-playlist.png)](https://res.cloudinary.com/drm14e8mg/video/upload/Frontend_ce9wpa.mp4)
 
 ### 🔹 Admin Panel
-[![Admin Panel Demo](https://img.icons8.com/clouds/100/000000/video-playlist.png)](https://res.cloudinary.com/drm14e8mg/video/upload/v1752846246/Admin_Panel_xj81zw.mp4)
+[![Admin Panel Demo](https://img.icons8.com/clouds/100/000000/video-playlist.png)](https://res.cloudinary.com/drm14e8mg/video/upload/Admin_Panel_xj81zw.mp4)
 
 ---
 
