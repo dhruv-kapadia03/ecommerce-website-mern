@@ -37,11 +37,7 @@ A fully functional MERN Stack E‑commerce Website. Offers complete product and 
 | **Frontend** | React (Vite), Redux/Context, React Router |
 | **Payments** | Stripe / PayPal / Razorpay          |
 | **Auth**     | JWT tokens                          |
-<<<<<<< HEAD:readme.md
 | **Deployment**| Heroku / Netlify / Vercel (not deployed)  |
-=======
-| **Deployment**| Heroku / Vercel (not deployed)     |
->>>>>>> 7e98729d118d7a2a275383ecde8d943a219d62f2:README.md
 
 ---
 
