@@ -1,4 +1,4 @@
-# MERN E‑commerce Website 🛍️
+# 🛍️ MERN E‑commerce Website 
 
 A fully functional MERN Stack E‑commerce Website. Offers complete product and order management, secure user authentication, payment integration, and an admin panel for seamless control and data management.
 
@@ -37,7 +37,11 @@ A fully functional MERN Stack E‑commerce Website. Offers complete product and 
 | **Frontend** | React (Vite), Redux/Context, React Router |
 | **Payments** | Stripe / PayPal / Razorpay          |
 | **Auth**     | JWT tokens                          |
+<<<<<<< HEAD:readme.md
 | **Deployment**| Heroku / Netlify / Vercel (not deployed)  |
+=======
+| **Deployment**| Heroku / Vercel (not deployed)     |
+>>>>>>> 7e98729d118d7a2a275383ecde8d943a219d62f2:README.md
 
 ---
 
@@ -82,7 +86,7 @@ Start the frontend:
 npm start
 ```
 
-Visit `http://localhost:3000/` for the storefront.
+Visit `http://localhost:5173/` for the storefront.
 
 ---
 
@@ -178,14 +182,3 @@ Ensure these are configured on deploy environment:
 - `JWT_SECRET`
 - `PAYMENT_CLIENT_ID`
 - `PAYMENT_CLIENT_SECRET` (if needed)
-
----
-
-## 🔜 Future Enhancements
-
-- Implement product reviews and ratings.
-- Add email notifications for order confirmation/status.
-- Enable product filtering and sorting.
-- Enhance security (rate limiting, helmet, CORS configuration).
-- Add tests (Jest/Supertest for server, React Testing Library for client).
-- Deploy CI/CD pipeline (GitHub Actions, Travis CI, etc.).
