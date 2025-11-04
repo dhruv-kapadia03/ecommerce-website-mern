@@ -250,7 +250,7 @@ const getUserData = async (req, res) => {
 const addToCart = async (req, res) => {
     try {
         console.log("Added", req.body.itemId);
-        let userData = await User.findOne({ _id: req.user.id });
+        let userData = await Users.findOne({ _id: req.user.id });
         if (!userData) {
             return res.status(404).json({ success: false, error: "User not found." });
         }
